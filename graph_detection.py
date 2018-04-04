@@ -7,6 +7,12 @@ class Graph(object):
         self.__graph_array = graph_array
         
     def vertices(self):
+        vertices = []
+        count = 0
+        for vertex in g:
+            vertices.append(count)
+            count += 1
+        return vertices
         """returns how many vertices are in graph"""
         return
     
@@ -25,4 +31,5 @@ class Graph(object):
 if __name__ == "__main__":
     g = [[3],[2], [1,2,3,4], [2,3]]
     graph = Graph(g)
-    print(graph.vertices())
+    print ("Name of all vertices:")
+    print ','.join(map(str, (graph.vertices())))
