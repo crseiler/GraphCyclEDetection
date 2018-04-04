@@ -21,8 +21,8 @@ class Graph(object):
     def is_cyclic(self):
         return
         
+        
 if __name__ == "__main__":
     g = [[3],[2], [1,2,3,4], [2,3]]
     graph = Graph(g)
     print(graph.vertices())
-    print("complete")
